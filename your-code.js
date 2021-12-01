@@ -11,7 +11,7 @@ the HTML or CSS files
 
 
 // Problem Two
-// Select the second square using querySelector. Change the background color to
+// Select the second square using class names. Change the background color to
 // orange, the text color white, and the border to 5px dashed black.
 
 // Your code here
@@ -20,6 +20,8 @@ the HTML or CSS files
 // Problem 3
 // Select all of the squares that have a class of "plus", and double their
 // width. Increase the size of the font as well. 
+// HINT: Check the CSS file or use your Dev Tools to find the original width and
+// font-size, and then double those sizes.
 
 // Your code here
 
