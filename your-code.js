@@ -6,10 +6,16 @@ the HTML or CSS files
 // Problem One
 // Select the first square using its id. Add a button inside the square with the
 // number 1 on it.
-
+let squareOne = document.getElementById("problem-one")
+squareOne.innerText = '';
+let button1 = document.createElement('button')
+button1.innerText = '1'
+squareOne.append(button1)
 // Your code here
 
-
+let squareTwo = document.getElementsByClassName('square two')
+squareTwo.style.backgroundColor = 'orange'
+squareTwo.style.color = 'white'
 // Problem Two
 // Select the second square using class names. Change the background color to
 // orange, the text color white, and the border to 5px dashed black.
