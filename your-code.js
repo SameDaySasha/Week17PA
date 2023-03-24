@@ -55,7 +55,6 @@ let problemSolver = document.getElementById('root').children
 for(let i = 0; i < 3; i++){
     let ele = problemSolver[4]
     ele.remove()
-
 }
 // Problem 5
 // Use JavaScript to remove boxes 5, 6, and 7. Can you remove multiple boxes at
