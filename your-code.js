@@ -13,10 +13,12 @@ button1.innerText = '1'
 squareOne.append(button1)
 // Your code here
 
-let squareTwo = document.getElementsByClassName('square two')
-squareTwo.style.backgroundColor = 'orange'
-squareTwo.style.color = 'white'
+
 // Problem Two
+let squareTwo = document.querySelector('.square.two')
+squareTwo.style.backgroundColor = "rgb(255, 165, 0)"
+squareTwo.style.color = 'white'
+squareTwo.style.border = '5px dashed black'
 // Select the second square using class names. Change the background color to
 // orange, the text color white, and the border to 5px dashed black.
 
@@ -24,12 +26,24 @@ squareTwo.style.color = 'white'
 
 
 // Problem 3
+let squareThree = document.querySelectorAll('.square.plus')
+for(let i = 0; i < squareThree.length; i++) {
+    squareThree[i].style.width ='100px'
+    squareThree[i].style.fontSize ='60px'
+}
 // Select all of the squares that have a class of "plus", and double their
 // width. Increase the size of the font as well. 
-// HINT: Check the CSS file or use your Dev Tools to find the original width and
+// HINT: Check the CSS file or use younpm install -g cypress@8.7.0.r Dev Tools to find the original width and
 // font-size, and then double those sizes.
 
 // Your code here
+let squareFour = document.querySelector('.square.four')
+squareFour.setAttribute('id', 'problem-four')
+squareFour.classList.add('round')
+squareFour.classList.remove('square')
+
+
+
 
 // Problem 4
 // Select the fourth box. Give it an id of "problem-four". Remove the class of
@@ -37,7 +51,12 @@ squareTwo.style.color = 'white'
 // different color and shape due to code in the css file.
 
 // Your code here
+let problemSolver = document.getElementById('root').children
+for(let i = 0; i < 3; i++){
+    let ele = problemSolver[4]
+    ele.remove()
 
+}
 // Problem 5
 // Use JavaScript to remove boxes 5, 6, and 7. Can you remove multiple boxes at
 // once? Think about what element selectors you could use? How could you
